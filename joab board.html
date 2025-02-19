@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <style>
+        button{
+            background: #e0f7fa;
+            border: none;
+            border-radius: 12px;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+        }
+        .container { 
+            width: 80%; 
+            max-width: 900px; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .search { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        }
+        #f-d { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            background: #fff; 
+            transition: 0.3s; 
+            cursor: pointer; 
+            display: grid;
+            gap: 10px;
+        }
+        #b-d { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            background: #fff; 
+            transition: 0.3s; 
+            cursor: pointer; 
+            display: grid;
+            gap: 10px;
+        }
+        #d-a { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            background: #fff; 
+            transition: 0.3s; 
+            cursor: pointer; 
+            display: grid;
+            gap: 10px;
+        }
+        #g-d { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            background: #fff; 
+            transition: 0.3s; 
+            cursor: pointer; 
+            display: grid;
+            gap: 10px;
+        }
+        .job { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            background: #fff; 
+            transition: 0.3s; 
+            cursor: pointer; 
+        }
+        #f-d:hover { background: #e0f7fa; }
+        #b-d:hover { background: #e0f7fa; }
+        #d-a:hover { background: #e0f7fa; }
+        #g-d:hover { background: #e0f7fa; }
+        #f-d h3 { margin: 0; color: #333; }
+        #b-d h3 { margin: 0; color: #333; }
+        #d-a h3 { margin: 0; color: #333; }
+        #g-d h3 { margin: 0; color: #333; }
+        #f-d p { margin: 5px 0; }
+        #b-d p { margin: 5px 0; }
+        #d-a p { margin: 5px 0; }
+        #g-d p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Board</h1>
+        <div class="carousel w-full">
+          </div>
+          <div class="flex w-full justify-center gap-2 py-2">
+            <a href="#f-d"><button><h3>Frontend Developer.</h3></button></a>
+            <a href="#b-d"><button><h3>Backend Developer.</h3></button></a>
+            <a href="#d-a"><button><h3>Data Analyst.</h3></button></a>
+            <a href="#g-d"><button><h3>Graphic Designer.</h3></button></a>
+          </div>
+        <div id="jobs"></div>     
+    <div class="boxes">
+        <div onclick="font()" id="f-d">
+            <h2>Frontend Developer</h2>
+            <h3>Web Development</h3>
+            <p>Work with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div onclick="back()" id="b-d">
+            <h2>Backend Developer</h2>
+            <h3>Web Development</h3>
+            <p>Work with databases and server logic.</p>
+        </div>
+        <div onclick="data()" id="d-a">
+            <h2>Data Analyst</h2>
+            <h3>Data Science</h3>
+            <p>Analyze and interpret complex data.</p>
+        </div>
+        <div onclick="Graphic()" id="g-d">
+            <h2>Graphic Designer</h2>
+            <h3>Design</h3>
+            <p>Create stunning visual content.</p>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function font() {
+            alert("Meet me in Dhaka, Brothers Frontend Development")
+        }
+        function back() {
+            alert("Meet me in Sylet, Brothers Backend Development")
+        }
+        function data() {
+            alert("Meet me in Kumilla, Brothers Data Analysting")
+        }
+        function Graphic() {
+            alert("Meet me in Chottogram, Brothers Graphic Designing")
+        }
+    </script>
+</body>
+</html>
